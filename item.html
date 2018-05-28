@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/all.min.css">
+	<link rel="stylesheet" href="css/item.min.css">
+	<title>Main</title>
+</head>
+<body>
+	<header>
+		<div class="logo"></div>
+		<nav>	
+			<ul>
+				<li><a href="index.html">Главная</a></li>
+				<li><a href="contacts.html">Контакты</a></li>
+				<li><a href="#">Корзина</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<div class="item">
+		</div>
+		<div class="desc">
+			<div class="title"></div>
+			<div class="pricePerWeek"></div>
+			<div class="pricePerMonth"></div>
+			<!-- <div class="description"></div> -->
+			<form action="telegram.php" method="POST">
+					<input type="text" name="gameTitle" class="hide" id="gameTitle" value="">
+					<input type="text" name="gamePricePerWeek" class="hide" id="gamePricePerWeek" value="">
+					<input type="text" name="gamePricePerMonth" class="hide" id="gamePricePerMonth" value="">
+      				<label for="name">Введите ваше имя</label>
+      				<input type="text" name="user_name" id="name" placeholder="Например, Иван">
+      				<label for="">Введите номер телефона</label>
+      				<input type="text" name="user_phone" placeholder="+38 (0XX) XXX XX XX">
+      				<label for="">Ссылка вк / телеграм</label>
+      				<input type="text" name="user_email" placeholder="@myTelegram / idXXXXXX">
+      				<button type="submit">Отправить</button>
+      		</form>
+
+		</div>	
+	</main>
+	
+	<script src="js/catalog.js"></script>
+	<script src="js/item.js"></script>
+</body>	
+</html>

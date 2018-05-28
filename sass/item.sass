@@ -1,0 +1,59 @@
+@import "fonts"
+@import "_base"
+
+	
+main
+	.item
+		height: 600px
+		float: left
+		margin: 5% 4%
+		width: 42%
+		max-width: 600px
+		background-color: red
+		background-position: center !important
+	.desc
+		height: 600px
+		float: left
+		margin: 5% 5%
+		width: 40%
+		div
+			text-align: center
+			margin-top: 20px
+		.title
+			font-size: 26px
+			font-weight: bold
+		form
+			margin: 50px auto
+			max-width: 250px
+			width: 80%
+			input
+				width: 100%
+				max-width: 350px
+			button
+				display: block
+				width: 200px
+				height: 70px
+				margin: 0 auto
+				text-align: center
+				margin-top: 30px
+				border: 1px solid black
+				background-color: #fff
+				font-size: 16px
+				&:hover
+					cursor: pointer
+					font-weight: bold
+					color: green
+					border: 1px solid green
+.hide
+	// visibility: hidden
+	display: none
+
+@media screen and (max-width: 1100px)
+	main
+		.item
+			height: 450px
+			width: 40%
+			min-width: 350px
+			margin-right: 0%
+
+

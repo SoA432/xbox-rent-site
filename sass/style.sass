@@ -1,0 +1,136 @@
+@import "fonts"
+@import "_base"
+
+.slider-wrap
+	position: relative
+	.slider
+		// background: url("../img/gta.jpg") no-repeat
+		transition: background 0.5s
+		background-position: center !important
+		height: 600px
+		width: 100%
+		margin: 0 auto
+		position: relative
+		&:hover
+			cursor: pointer
+		a
+			display: block
+			height: 100%
+			widht: 100%
+	button
+		// background-color: red
+		height: 100px
+		width: 100px
+		position: absolute
+		top: calc(50% - 50px)
+		outline: 0
+		border: 0
+		filter: none
+		&:hover
+			cursor: pointer
+			filter: contrast(80%)
+	.prev-slide
+		left: 3%
+		background: url("../img/arrowPrev.png")
+		background-size: cover
+	.next-slide
+		right: 3%
+		background: url("../img/arrowNext.png")
+		background-size: cover
+
+main
+	margin: 0 auto
+	padding-top: 50px
+	overflow: hidden
+	a
+		.item
+			width: 15%
+			height: 500px
+			float: left
+			overflow: hidden
+			margin-right: 3%
+			margin-bottom: 50px
+			margin-left: 2%
+			&:hover
+				cursor: pointer
+				filter: contrast(150%)
+				font-weight: bold
+				div
+					color: green
+			.title
+				padding-top: 15px
+			.elem
+				margin: 0 auto
+				background-position: center !important
+				width: 100%
+				height: 350px
+			div
+				text-align: center
+				font-family: RobotoRegular, sans-serif
+				font-size: 16px
+				span
+					color: inherit
+
+
+@media screen and (min-width: 1366px) and (max-width: 1600px)
+	main
+		a
+			.item
+				width: 18%
+				margin-left: 3%
+				// .elem
+				// 	height: 325px
+			&:nth-child(4n+1)
+				.item
+					margin-left: 5%
+
+@media screen and (min-width: 1025px) and (max-width: 1365px)
+	header
+		.slider-wrap
+			.slider
+				height: 550px
+	main
+		a
+			.item
+				width: 18%
+				margin-left: 3%
+				height: 400px
+				// .elem
+				// 	height: 325px
+				.elem
+					height: 275px
+			&:nth-child(4n+1)
+				.item
+					margin-left: 5%
+
+@media screen and (min-width: 768px) and (max-width: 1024px)
+	header
+		.slider-wrap
+			.slider
+				height: 500px
+	main
+		a
+			.item
+				width: 25%
+				margin-left: 5%
+				height: 400px
+				// .elem
+				// 	height: 325px
+				.elem
+					height: 275px
+
+@media screen and (max-width: 767px)
+	header
+		.slider-wrap
+			.slider
+				height: 500px
+	main
+		a
+			.item
+				width: 40%
+				margin-left: 5%
+				height: 450px
+				.elem
+					height: 350px
+			
+	
